@@ -1,0 +1,17 @@
+.MySelect {
+  padding: 10px;
+  background-color: #f7f7f7;
+  color: #333;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+select:hover {
+  border-color: #999;
+}
+select:focus {
+  border-color: #4c7ef3;
+  box-shadow: 0 0 0 2px rgba(76, 126, 243, 0.2);
+}

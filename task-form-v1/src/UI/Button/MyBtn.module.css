@@ -1,0 +1,62 @@
+/* General button style */
+.MyBtn {
+  border: none;
+  font-family: "Lato";
+
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 20px 50px;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  border-radius: 17px;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.MyBtn:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* Pseudo elements for icons */
+.MyBtn:before {
+  font-family: "FontAwesome";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+
+.MyBtn {
+  background: #3498db;
+  color: #fff;
+}
+
+.MyBtn:hover {
+  background: #2980b9;
+}
+
+.MyBtn:active {
+  background: #2980b9;
+  top: 2px;
+}
+
+.MyBtn:before {
+  font-size: 140%;
+  width: 60px;
+}
